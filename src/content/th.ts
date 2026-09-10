@@ -34,9 +34,9 @@ export const siteTh: Site = {
     fax: "02-080-9880",
     email: "sales@shinasub.com",
     coords: {
-      lat: 13.7299,
-      lng: 100.5333,
-      label: "13.7299° N, 100.5333° E",
+      lat: 13.729414872738044,
+      lng: 100.53582288994332,
+      label: "13.729414872738044° N, 100.53582288994332° E",
       building: "อาคารสีลม เอจ",
     },
     mapImage: "/images/silom_Edge.jpg",
