@@ -104,9 +104,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: site.meta.layout.title,
       description: site.meta.layout.description,
     },
-    icons: {
-      icon: "/images/Shinasub_Logo.png",
-    },
+    // No `icons` here on purpose. src/app/favicon.ico (plus apple-icon.png)
+    // is Next's file convention and emits the icon links on its own; when
+    // this block also declared one, the page shipped two competing
+    // <link rel="icon"> tags and Chrome picked the .ico — so pointing this
+    // at the logo PNG had no effect on the tab at all. The .ico is now
+    // generated from the logo's monogram, which is what that PNG was
+    // trying to achieve.
   };
 }
 
